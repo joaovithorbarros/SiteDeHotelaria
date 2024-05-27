@@ -1,0 +1,52 @@
+body
+{
+    background-color: rgb(83, 188, 236);
+    
+}
+
+header
+{
+    font: normal 20pt Arial;
+    color: white;
+
+
+}
+
+.principal
+{
+    font-family: sans-serif;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 2px rgb(4, 97, 126);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal .hospede 
+{
+    border-left: 2px solid black;
+    padding: 0 0 0 30px;
+    height: 30px;
+}
+
+.principal .destino .Bdestino
+{
+    color: gray;
+    font-size: 13px;
+}
+
+.principal .hospede .hospedes 
+{
+    color: gray;
+    font-size: 13px;
+}
+
+footer
+{
+    color: white;
+    text-align: center;
+}
