@@ -1,15 +1,42 @@
 body
 {
     background-color: rgb(83, 188, 236);
-    
 }
 
-header
+.header
 {
     font: normal 20pt Arial;
-    color: white;
+    color: black;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    justify-content: space-between;
+}
 
+.header .acoexp
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.header .aco 
+{
+    padding: 0 50px 0 50px;
+}
+
+.header .logo 
+{
+    margin-left: 30px;
+}
+
+.header .perfil 
+{
+    opacity: 60%;
+    margin-right: 100px;
 }
 
 .principal
@@ -19,7 +46,7 @@ header
     padding: 15px;
     border-radius: 12px;
     width: 50%;
-    margin: auto;
+    margin: 50px auto;
     box-shadow: 2px 2px 2px rgb(4, 97, 126);
     display: flex;
     justify-content: space-between;
@@ -49,4 +76,42 @@ footer
 {
     color: white;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width: 700px)
+{
+    .header .logo 
+    {
+        margin-left: 10px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .header .perfil 
+    {
+        opacity: 60%;
+        margin-right: 40px;
+    }
+
+    .header .aco 
+    {
+        padding: 0;
+    }
+
+    .header .acoexp
+    {
+        font-size: 20px;
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .principal
+    {
+        width: 70%;
+    }
 }
