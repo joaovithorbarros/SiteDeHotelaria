@@ -3,8 +3,9 @@ body
     background-color: rgb(83, 188, 236);
 }
 
-.header
+header
 {
+    /* ABAIXO ESTÃO AS CONFIGURAÇÕES DA TAG DE CABEÇALHO DA PAGINA ->(HEADER) */
     font: normal 20pt Arial;
     color: black;
     background-color: white;
@@ -13,34 +14,67 @@ body
     align-items: center;
     box-shadow: 1px 1px 5px black;
     justify-content: space-between;
+
+    /* ABAIXO ESTÃO AS CONFIGURAÇÕES DAS DIVS QUE ESTÃO DENTRO DA TAG HEADER */
+
+    .acoexp
+    {
+        margin: auto;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contorno_aco
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent; 
+        transition: 0.2s ease;
+    }
+    .contorno_exp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent; 
+    }
+    .aco
+    {
+        padding: 0 20px 0 20px;
+        border-radius: 15px; 
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+    .exp
+    {
+        padding: 0 20px 0 20px;
+        border-radius: 15px; 
+        transition: 0.2s ease; 
+        cursor: pointer;
+    }
+    .alteratedBackground
+    {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .logo
+    {
+        margin-left: 30px;
+    }
+    .perfil
+    {
+        opacity: 60%;
+        margin-right: 100px;
+        cursor: pointer;
+    }
+
 }
 
-.header .acoexp
+section
 {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.header .aco 
-{
-    padding: 0 50px 0 50px;
-}
-
-.header .logo 
-{
-    margin-left: 30px;
-}
-
-.header .perfil 
-{
-    opacity: 60%;
-    margin-right: 100px;
-}
-
-.principal
-{
+    /* ABAIXO ESTÃO AS CONFIGURAÇÕES DA TAG DO CORPO DA PAGINA ->(SECTION) */
     font-family: sans-serif;
     background: white;
     padding: 15px;
@@ -51,25 +85,44 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.principal .hospede 
-{
-    border-left: 2px solid black;
-    padding: 0 0 0 30px;
-    height: 30px;
-}
+    /* ABAIXO ESTÃO AS CONFIGURAÇÕES DAS DIVS QUE ESTÃO DENTRO DA TAG SECTION*/
 
-.principal .destino .Bdestino
-{
-    color: gray;
-    font-size: 13px;
-}
-
-.principal .hospede .hospedes 
-{
-    color: gray;
-    font-size: 13px;
+    .hospede
+    {
+        border-left: 2px solid black;
+        padding: 0 0 0 30px;
+        height: 30px;
+    
+    }
+    .destino .Bdestino
+    {
+        color: gray;
+        font-size: 13px;
+    }
+    .hospede .hospedes
+    {
+        color: gray;
+        font-size: 13px;
+    }
+    .contorno-lupa
+    {
+        height: 35px;
+        width: 35px;
+        background-color: skyblue;
+        border-radius: 50%;
+        padding: 5px;
+        transition: 1s ease;
+    }
+    .lupa
+    {
+        filter: invert(1);
+        cursor: pointer;
+    }
+    .shadow
+    {
+        filter: brightness(88%);
+    }
 }
 
 footer
@@ -83,25 +136,25 @@ footer
 
 @media(max-width: 700px)
 {
-    .header .logo 
+    header .logo 
     {
         margin-left: 10px;
         width: 90px;
         height: 90px;
     }
 
-    .header .perfil 
+    header .perfil 
     {
         opacity: 60%;
         margin-right: 40px;
     }
 
-    .header .aco 
+    header .aco 
     {
         padding: 0;
     }
 
-    .header .acoexp
+    header .acoexp
     {
         font-size: 20px;
         margin: auto;
@@ -110,8 +163,78 @@ footer
         flex-wrap: wrap;
     }
 
-    .principal
+    section
     {
         width: 70%;
     }
 }
+
+    .janela-modal
+    {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0000004b;
+        z-index: 999;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .modal 
+    {
+        width: 40%;
+        height: 60%;
+        min-width:400px;
+        min-height: 200px;
+        background-color: #ffffff62;
+        backdrop-filter: blur(10px);
+        padding: 50px;
+        border-radius: 10px;
+    }
+    .fechar
+    {
+        font-size: 20px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: cadetblue;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+    }
+@keyframes animacao
+{
+    from
+    {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    } 
+    to 
+    {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+    .fechar:hover
+    {
+        background-color: #ff4c2c;
+    }
+    .janela-modal.abrir
+    {
+        display: flex;
+    }
+
+.janela-modal.abrir .modal
+{
+    animation: animacao .3s forwards; 
+}
+
+
+
