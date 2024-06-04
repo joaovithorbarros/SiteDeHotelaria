@@ -36,3 +36,27 @@ function abrirModal()
         }
     });
 }
+
+function mouseOverIcon()
+{
+
+}
+
+const box = document.getElementById("profileBox");
+const bt = document.getElementById("botao");
+var inserido = false;
+
+function openBox()
+{
+    switch (inserido) {
+        case false:
+            box.classList.add("exibir");
+            inserido = true;
+            break;
+        case true:
+            box.classList.remove("exibir");
+            inserido = false;
+        default:
+            break;
+    }
+}

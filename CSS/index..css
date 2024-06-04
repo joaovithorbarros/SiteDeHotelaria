@@ -1,6 +1,7 @@
 body
 {
     background-color: rgb(83, 188, 236);
+
 }
 
 header
@@ -14,6 +15,7 @@ header
     align-items: center;
     box-shadow: 1px 1px 5px black;
     justify-content: space-between;
+
 
     /* ABAIXO ESTÃO AS CONFIGURAÇÕES DAS DIVS QUE ESTÃO DENTRO DA TAG HEADER */
 
@@ -65,9 +67,45 @@ header
     }
     .perfil
     {
-        opacity: 60%;
-        margin-right: 100px;
+        .botao
+        {
+            background-color: #effbff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .img
+        {
+            opacity: 80%;
+        }
+
+        .profileBox
+        {
+            display: none;
+            position: absolute;
+            right: 50px;
+            background-color: #effbff;
+            padding: 20px;
+            width: 200px;
+            min-width: 150px;
+            max-width: 250px;
+            min-height: 150px;
+            max-height: 250px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 1px rgb(3, 75, 97);
+            
+    
+        }
+        .exibir
+        {
+            display: flex;
+        }
+        margin-right: 130px;
         cursor: pointer;
+
     }
 
 }
@@ -147,6 +185,7 @@ footer
     {
         opacity: 60%;
         margin-right: 40px;
+        
     }
 
     header .aco 
@@ -167,6 +206,7 @@ footer
     {
         width: 70%;
     }
+    
 }
 
     .janela-modal
@@ -235,6 +275,9 @@ footer
 {
     animation: animacao .3s forwards; 
 }
+
+
+
 
 
 
