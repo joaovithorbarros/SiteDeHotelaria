@@ -107,7 +107,7 @@ header
 
 }
 
-section
+.pesquisa
 {
     /* ABAIXO ESTÃO AS CONFIGURAÇÕES DA TAG DO CORPO DA PAGINA ->(SECTION) */
     font-family: sans-serif;
@@ -171,6 +171,11 @@ section
     {
         filter: brightness(88%);
     }
+}
+
+.icones
+{
+
 }
 
 footer
