@@ -175,7 +175,19 @@ header
 
 .icones
 {
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: sans-serif;
+}
 
+.conteudoh
+{
+    margin-top: 3rem;
+    background-color: #fff;
 }
 
 footer
