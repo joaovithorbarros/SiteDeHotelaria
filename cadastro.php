@@ -18,7 +18,7 @@
                 <input type="hidden" name="acao" value="cadastrar">
                 <img src="./IMAGENS/SECE.png" class="mb-4" height="150" width="250" />
             </div>
-            <h1 class="h3 mb-3 fw-normal">Realizar cadastro</h1>
+            <h1 class="h3 mb-3 fw-normal">Cadastre-se</h1>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="your-email@gmail.com" name="nome" required>
             <label for="floatingInput">Nome</label> 
@@ -35,7 +35,7 @@
                 <input type="date" class="form-control" id="floatingInput" placeholder="your-email@gmail.com" name="data-nasc" required>
             <label for="floatingInput">Data de Nascimento</label>
             </div>
-            <button class="btn btn-primary w-50 py-2 ">Entrar</button>
+            <button class="btn btn-primary w-50 py-2 ">Salvar</button>
         </form>
     </main>
 <script src="./JS/bootstrap.bundle.min.js"></script>
