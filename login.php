@@ -6,11 +6,11 @@
     {
         if(strlen($_POST['email']) == 0)
         {
-            echo "Informe o email";
+            echo "<script>window.alert('Informe o e-mail');</script>";
         }
         else if(strlen($_POST['senha']) == 0)
         {
-            echo "Informe a senha";
+            echo "<script>window.alert('Informe a senha');</script>";
         }
         else
         {
@@ -46,19 +46,30 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/form.css">
     <title>Login</title>
 </head>
-<body>
+<body class="d-flex align-items-center py-4 bg-body-tertiary h-100">
+    <main class="w-100 m-auto form-container">
     <form action="" method="POST">
-        <label for="">Email:</label>
-        <input type="text" name="email"><br><br>
-        <label for="">Senha:</label>
-        <input type="password" name="senha"><br><br>
-        <button type="submit">OK!</button>
+        <img src="./IMAGENS/SECE.png" class="mb-4" height="150" width="250" />
+        <h1 class="h3 mb-3 fw-normal">Fazer login</h1>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="your-email@gmail.com" name="email">
+            <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingInput" placeholder="your-email@gmail.com" name="senha">
+            <label for="floatingInput">Senha</label>
+        </div>
+        <button class="btn btn-primary w-100 py-2">Entrar</button>
     </form>
+    </main>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -103,7 +103,6 @@
         </div>        
     </div>
     <script src="./JS/index.js"></script>
-
 </body>
 </html>
 
