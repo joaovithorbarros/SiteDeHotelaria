@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SECE | Experiências e hospedagem</title>
-    <link rel="stylesheet" href="./CSS/index..css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./IMAGENS/favicon.ico" type="image/x-icon">
@@ -27,8 +27,8 @@
             </div>
             <div class = "profileBox" id = "profileBox">
                 <div class="contentProfileBox" id="contentProfileBox">
-                    <div class="a-cadastrar" id="a-cadastrar"><a href="cadastro.php">Cadastrar-se</a></div><br>
-                    <div class="a-cadastrar" id="a-cadastrar"><a>Entrar</a></div>
+                    <div class="a-cadastrar" id="a-cadastrar"><a class="cad" href="cadastro.php">Cadastrar-se</a></div><br>
+                    <div class="a-cadastrar" id="a-cadastrar"><a class="cad" href="#">Entrar</a></div>
                 </div>
             </div>
         </div>
@@ -68,7 +68,26 @@
             </div>
         </div>
         <div class="conteudoh">
-            a
+            <div class="box">
+                <img src="./IMAGENS/Ap1.jpeg" alt="">
+                <p>Apartamento Meireles - Fortaleza</p>
+
+            </div>
+            <div class="box">
+                <img src="./IMAGENS/Ap2.jpeg" alt="">
+                <p>Pousada em Paracuru</p>
+                
+            </div>
+            <div class="box">
+                img
+                nome
+                
+            </div>
+            <div class="box">
+                img
+                nome
+                
+            </div>
         </div>
     </section>
 
