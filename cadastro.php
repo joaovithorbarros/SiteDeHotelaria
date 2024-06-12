@@ -1,7 +1,7 @@
 <h1>Cadastro</h1>
 <?php
     include("config.php");
-
+    
 ?>
 <link rel="stylesheet" href="./CSS/bootstrap.min.css">
 <form action="salvar.php" method="POST">

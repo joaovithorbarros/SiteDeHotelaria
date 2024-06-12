@@ -37,10 +37,6 @@ function abrirModal()
     });
 }
 
-function mouseOverIcon()
-{
-
-}
 
 const box = document.getElementById("profileBox");
 const bt = document.getElementById("botao");
@@ -56,6 +52,40 @@ function openBox()
         case true:
             box.classList.remove("exibir");
             inserido = false;
+        default:
+            break;
+    }
+}
+var inser_aco = false;
+function cl()
+{
+    const aco = document.getElementById("a-aco");
+    
+    switch (inser_aco) {
+        case false:
+            aco.classList.add("linhar_aco");
+            inser_aco = true;
+            break;
+        case true:
+            aco.classList.remove("linhar_aco");
+            inser_aco = false;
+        default:
+            break;
+    }
+}
+var inser_exp = false;
+function ct()
+{
+    const exp = document.getElementById("a-exp");
+    
+    switch (inser_exp) {
+        case false:
+            exp.classList.add("linhar_exp");
+            inser_exp = true;
+            break;
+        case true:
+            exp.classList.remove("linhar_exp");
+            inser_exp = false;
         default:
             break;
     }

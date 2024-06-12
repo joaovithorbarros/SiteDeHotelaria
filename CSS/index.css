@@ -32,7 +32,6 @@ header
         justify-content: center;
         align-items: center;
         border: 1px solid transparent; 
-        transition: 0.2s ease;
     }
     .contorno_exp
     {
@@ -47,6 +46,15 @@ header
         border-radius: 15px; 
         transition: 0.2s ease;
         cursor: pointer;
+    }
+    .linhar_aco
+    {
+        border-bottom: 2px solid black;;
+        
+    }
+    .linhar_exp
+    {
+        border-bottom: 2px solid black;
     }
     .exp
     {
@@ -143,8 +151,10 @@ header
     }
     .binv
     {
-        border-left: 2px solid black;
-        padding: 20px;
+        border-left: 2px solid rgb(0, 0, 0);
+        padding: 25px;
+        position: relative;
+        left: 40px;
     }
     .destino
     {
@@ -380,6 +390,12 @@ footer
 {
     animation: animacao .3s forwards; 
 }
+
+a:focus
+{
+    outline: none !important;
+}
+
 
 
 
