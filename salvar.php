@@ -4,7 +4,7 @@
         case "cadastrar":
             $nome = $_POST["nome"];
             $email = $_POST["email"];
-            $senha = md5($_POST["senha"]);
+            $senha = $_POST["senha"];
             $data_nasc = $_POST["data-nasc"];
             
             $sql = "INSERT INTO usuarios (nome, email, senha, data_nasc) VALUES ('{$nome}', '{$email}', '{$senha}', '{$data_nasc}')";
@@ -26,7 +26,7 @@
         case "editar":
             $nome = $_POST["nome"];
             $email = $_POST["email"];
-            $senha = md5($_POST["senha"]);
+            $senha = $_POST["senha"];
             $data_nasc = $_POST["data-nasc"];
 
             $sql = "UPDATE usuarios SET

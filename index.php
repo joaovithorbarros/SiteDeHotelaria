@@ -28,7 +28,7 @@
             <div class = "profileBox" id = "profileBox">
                 <div class="contentProfileBox" id="contentProfileBox">
                     <div class="a-cadastrar" id="a-cadastrar"><a class="cad" href="cadastro.php">Cadastrar-se</a></div><br>
-                    <div class="a-cadastrar" id="a-cadastrar"><a class="cad" href="#">Entrar</a></div>
+                    <div class="a-cadastrar" id="a-cadastrar"><a class="cad" href="login.php">Entrar</a></div>
                 </div>
             </div>
         </div>
