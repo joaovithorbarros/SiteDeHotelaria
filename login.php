@@ -30,7 +30,7 @@
             }
             else
             {
-                echo "Login ou senha incorretos";
+                echo "<script>alert('dados incorretos');</script>";
             }
     }
 ?>

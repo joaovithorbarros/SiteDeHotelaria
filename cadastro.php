@@ -35,7 +35,7 @@
                 <input type="date" class="form-control" id="floatingInput" placeholder="your-email@gmail.com" name="data-nasc" required>
             <label for="floatingInput">Data de Nascimento</label>
             </div>
-            <button class="btn btn-primary w-50 py-2 ">Salvar</button>
+            <button class="btn btn-primary w-50 py-2">Salvar</button>
         </form>
     </main>
 <script src="./JS/bootstrap.bundle.min.js"></script>
