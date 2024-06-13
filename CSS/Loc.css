@@ -1,0 +1,175 @@
+header
+{
+    font: normal 20pt Arial;
+    color: black;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    justify-content: space-between;
+
+    .logo
+    {
+        margin-left: 150px;
+    }
+    .perfil
+    {
+
+        .botao
+        {
+            background-color: #effbff;
+            border: none;
+            border-radius: 50%;
+            height: 50px;
+            transition: 0.5s ease;
+            margin-right: 150px;
+        }
+        .img
+        {
+            opacity: 80%;
+        }
+        #img
+        {
+            cursor: pointer;
+        }
+        .profileBox
+        {
+            display: none;
+            position: absolute;
+            right: 50px;
+            background-color: #effbff;
+            padding: 20px;
+            width: 200px;
+            min-width: 150px;
+            max-width: 250px;
+            min-height: 150px;
+            max-height: 250px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 1px rgb(3, 75, 97);
+            animation: animacao .2s forwards; 
+        }
+        .exibir
+        {
+            display: flex;
+        }
+        
+        .cad
+        {
+        text-decoration: none;
+        color: black;
+        }
+
+    }
+}
+
+section
+{
+    margin: 15px 150px 0 150px;
+    background-color: #fff;
+    align-items: center;
+    
+    h1
+    {
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2
+    {
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h3
+    {
+        font-family: sans-serif;
+        margin: 5px 0 10px 0;
+    }
+
+    p
+    {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    li
+    {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 17px;
+    }
+
+    button
+    {
+        border: 1px solid black;
+        margin: 15px 0 15px 0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 50px;
+        background-color: skyblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .imagens
+    {
+        display: flex;
+        text-align: start;
+    }
+    .imgs img
+    {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+footer
+{
+    background-color: skyblue;
+    height: 100px;
+
+    p
+    {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 912px)
+{
+    section .imgs img
+    {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 781px)
+{
+    section .imgs img
+    {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    section
+    {
+        margin: 15px 50px 0 50px;
+    }
+
+    section .nll
+    {
+        display: none;
+    }
+
+    section .imgs img
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}

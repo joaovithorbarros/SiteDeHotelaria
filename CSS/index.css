@@ -119,8 +119,6 @@ header
 
     }
 
-    
-
 }
 
 .pesquisa
@@ -189,32 +187,83 @@ header
     {
         filter: brightness(88%);
     }
-}
 
-.icones
-{
-    width: 45%;
-    align-items: center;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-family: sans-serif;
-    border-radius: 50px;
-    background-color: white;
-    
-    img
+    .Onde-list
     {
-        margin-bottom: 5px;
+        position: absolute;
+        top: 234px;
+        background-color: #fff;
+        padding: 10px;
+        width: 120px;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 110px;
+        max-height: 200px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 1px 1px 1px rgb(3, 75, 97);
+        animation: animacao .2s forwards; 
+    }
+
+    .Quem-list
+    {
+        position: absolute;
+        top: 234px;
+        background-color: #fff;
+        padding: 10px;
+        width: 120px;
+        min-width: 100px;
+        max-width: 200px;
+        min-height: 110px;
+        max-height: 200px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 1px 1px 1px rgb(3, 75, 97);
+        animation: animacao .2s forwards; 
+    }
+
+    .Onde-list li
+    {
+        list-style: none;
+        margin-bottom: 3px;
+    }
+
+    .Onde-list a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .Quem-list li
+    {
+        list-style: none;
+        margin-bottom: 3px;
+    }
+
+    .Quem-list a
+    {
+        text-decoration: none;
+        color: black;
     }
 }
 
 .conteudoh
 {
-    margin: 3rem 0 0 0;    justify-content: space-evenly;
+    margin: 10rem 0 0 0;    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     border-radius: 30px 30px 0 0;
+
+    .box-exp
+    {
+        padding: 10px 10px 0 10px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin: 10px;
+        width: 300px;
+        height: 450px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        display: none;
+    }
 
     .box
     {
@@ -243,16 +292,29 @@ header
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; 
+        text-align: center;
+        margin-top: 5px;
     }
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
 }
 
 footer
 {
-    color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    height: 100px;
+    position: static;
+
+    p
+    {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 @media(max-width: 781px)
